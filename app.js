@@ -7,7 +7,7 @@ const app = express();
 
 database.connection.connect();
 
-require("./models/user");
+require("./Models/user");
 
 app.post('/users', (req, res) => {
   console.log('body', req.body)
