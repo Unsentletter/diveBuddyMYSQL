@@ -1,14 +1,13 @@
 const mysql = require('mysql');
-//require('dotenv').config();
 
-console.log(process.env.DB_PASSWORD)
-
+// Connects to the DB
 const connection = mysql.createConnection({
   host: 'localhost',
-  // dbUsername
+  // DB Username
   user: 'root',
+  // DB password saved in .env
   password: process.env.DB_PASSWORD,
-  // database name
+  // DB name
   database: 'dive_buddy'
 });
 
